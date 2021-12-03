@@ -27,10 +27,12 @@ https://www.youtube.com/watch?v=ZZY9YE7rZJw - good example of procedural generat
 https://www.youtube.com/watch?v=Bed1z7f1EI4 -  example of what can be done in three.js
 ### Plan of attack
 
-1. Start as very basic text game (worry about CSS and design later).
-2. Create initial files
-3. Create and store a username
-4. Users will do this through a login or accoutn creation option
-5. Upon logging in, will be redirected to the first page of the game
-6. welcome user
-7. 
+
+1. Create functionality to generate a random planet 
+2. Start a basic text game
+3. Create initial files
+4. Create and store a username
+5. Users will do this through a login or accoutn creation option
+6. Upon logging in, will be redirected to the first page of the game
+7. welcome user
+8. 
