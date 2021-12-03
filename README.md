@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=PkxA6m-NNCY login in JS and HTML tutorial
 
 https://www.youtube.com/watch?v=kayFBMl06q8 - text based game with javascript - will help me start
 
-
+https://codepen.io/beejaymorgan/pen/XpGKWJ - good example of what I'm looking to achieve, user input is minimal (use as CSS reference)
 
 ### Plan of attack
 
