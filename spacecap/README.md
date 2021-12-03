@@ -25,6 +25,8 @@ https://codepen.io/beejaymorgan/pen/XpGKWJ - good example of what I'm looking to
 https://www.youtube.com/watch?v=ZZY9YE7rZJw - good example of procedural generation, potential use for my planet/star creation MVC
 
 https://www.youtube.com/watch?v=Bed1z7f1EI4 -  example of what can be done in three.js
+
+https://www.youtube.com/watch?v=2BvU23DkWPg -  more examples of how to possibly code planets
 ### Plan of attack
 
 
