@@ -18,6 +18,8 @@ https://www.youtube.com/watch?v=ZGOaCxX8HIU tetris game example in react
 
 https://www.youtube.com/watch?v=PkxA6m-NNCY login in JS and HTML tutorial
 
+https://www.youtube.com/watch?v=kayFBMl06q8 - text based game with javascript - will help me start
+
 
 
 ### Plan of attack
@@ -25,5 +27,7 @@ https://www.youtube.com/watch?v=PkxA6m-NNCY login in JS and HTML tutorial
 1. Start as very basic text game (worry about CSS and design later).
 2. Create initial files
 3. Create and store a username
-4. welcome user
-5. 
+4. Users will do this through a login or accoutn creation option
+5. Upon logging in, will be redirected to the first page of the game
+6. welcome user
+7. 
