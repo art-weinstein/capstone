@@ -1,0 +1,1 @@
+### Initial planning: react or just javascript?
