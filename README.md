@@ -22,6 +22,9 @@ https://www.youtube.com/watch?v=kayFBMl06q8 - text based game with javascript - 
 
 https://codepen.io/beejaymorgan/pen/XpGKWJ - good example of what I'm looking to achieve, user input is minimal (use as CSS reference)
 
+https://www.youtube.com/watch?v=ZZY9YE7rZJw - good example of procedural generation, potential use for my planet/star creation MVC
+
+https://www.youtube.com/watch?v=Bed1z7f1EI4 -  example of what can be done in three.js
 ### Plan of attack
 
 1. Start as very basic text game (worry about CSS and design later).
