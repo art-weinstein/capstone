@@ -27,6 +27,8 @@ https://www.youtube.com/watch?v=ZZY9YE7rZJw - good example of procedural generat
 https://www.youtube.com/watch?v=Bed1z7f1EI4 -  example of what can be done in three.js
 
 https://www.youtube.com/watch?v=2BvU23DkWPg -  more examples of how to possibly code planets
+
+https://www.youtube.com/watch?v=pUgWfqWZWmM - potential three.js option
 ### Plan of attack
 
 
