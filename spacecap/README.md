@@ -29,6 +29,8 @@ https://www.youtube.com/watch?v=Bed1z7f1EI4 -  example of what can be done in th
 https://www.youtube.com/watch?v=2BvU23DkWPg -  more examples of how to possibly code planets
 
 https://www.youtube.com/watch?v=pUgWfqWZWmM - potential three.js option
+
+https://www.youtube.com/watch?v=3qJZGGHc3lg&t=42s - easy to follow blender planet tutorial, will be imported in three.js
 ### Plan of attack
 
 
