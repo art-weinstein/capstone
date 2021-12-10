@@ -33,6 +33,8 @@ https://www.youtube.com/watch?v=pUgWfqWZWmM - potential three.js option
 https://www.youtube.com/watch?v=3qJZGGHc3lg&t=42s - easy to follow blender planet tutorial, will be imported in three.js
 
 https://www.youtube.com/watch?v=Zevn_LrfKb8 - resource for rendering
+
+test commit on new computer
 ### Plan of attack
 
 
