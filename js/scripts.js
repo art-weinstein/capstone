@@ -1,6 +1,7 @@
 var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
 var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia", "Helium", "Carbon Dioxide"];
 //planet temp?
+var finalPlanet = [];
 function planetType(){
   let planet = planetTraits[Math.floor(Math.random() * planetTraits.length)];
   return planet;
@@ -22,17 +23,22 @@ function systemName() {
   return text;
 }
 
+
 $(document).ready(function() {
   $('.submit').click(function(event) {
     event.preventDefault();
       $(this).html(systemName());
-      $('.planet').text(planetType());
+      $('.planet0').text(planetType());
+      $('.planet1').text(planetType());
+      $('.planet2').text(planetType());
+      $('#masses').text(earthMasses());
+
   })
 });
 
 $(document).ready(function(){
   $('.planet').click(function(event){
     event.preventDefault();
-      $('#masses').text(earthMasses());
+      // $('#masses').text(earthMasses());
   })
 });
