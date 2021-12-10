@@ -10,9 +10,8 @@ function systemName() {
 
 
 $(document).ready(function() {
-  $('#submit').submit(function(event) {
+  $('.submit').click(function(event) {
     event.preventDefault();
-      // systemName()
       $(this).html(systemName())
   })
 });
