@@ -1,3 +1,5 @@
+var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth Like"]
+
 function systemName() {
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
