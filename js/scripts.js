@@ -1,4 +1,10 @@
-var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth Like"]
+var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
+
+function planetType(){
+  let planet = planetTraits[Math.floor(Math.random() * planetTraits.length)];
+  return planet;
+}
+
 
 function systemName() {
   var text = "";
@@ -14,6 +20,7 @@ function systemName() {
 $(document).ready(function() {
   $('.submit').click(function(event) {
     event.preventDefault();
-      $(this).html(systemName())
+      $(this).html(systemName());
+      $('.planet').text(planetType());
   })
 });
