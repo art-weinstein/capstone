@@ -7,10 +7,9 @@ function planetType(){
 }
 
 function earthMasses(){
-  var finalMass = [];
   var num = 100;
-  finalMass.push(Math.floor(Math.random() * (10 * num - 1 * num) + 1 * num) / (1*num));
-  return finalMass;
+  var mass = Math.floor(Math.random() * (10 * num - 1 * num) + 1 * num) / (1*num);
+  return mass;
 }
 
 function systemName() {
@@ -27,16 +26,19 @@ function finalPlanet(){
   return finalMass;
 }
 
+
+
+
 $(document).ready(function() {
   $('.submit').click(function(event) {
     event.preventDefault();
       $(this).html(systemName());
       $('.planet0').text(planetType());
-      $('.masses').text(earthMasses());
+      $('.masses0').text(earthMasses());
       $('.planet1').text(planetType());
-      $('.masses').text(earthMasses());
+      $('.masses1').text(earthMasses());
       $('.planet2').text(planetType());
-      $('.masses').text(earthMasses());
+      $('.masses2').text(earthMasses());
 
   })
 });
