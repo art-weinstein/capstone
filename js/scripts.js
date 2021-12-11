@@ -1,15 +1,15 @@
 var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
 var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia", "Helium", "Carbon Dioxide"];
 //planet temp?
-function planetType(){
+function planetType() {
   let planet = planetTraits[Math.floor(Math.random() * planetTraits.length)];
   return planet;
 }
 
-function earthMasses(){
+function earthMasses() {
   var num = 100;
-  var mass = Math.floor(Math.random() * (10 * num - 1 * num) + 1 * num) / (1*num);
-  return mass;
+  var mass = Math.floor(Math.random() * (10 * num - 1 * num) + 1 * num) / (1 * num);
+  return "Earth Masses " + mass;
 }
 
 function systemName() {
@@ -22,30 +22,41 @@ function systemName() {
   return text;
 }
 
-function finalPlanet(){
+function finalPlanet() {
   return finalMass;
 }
 
 
 
 
-$(document).ready(function() {
-  $('.submit').click(function(event) {
+$(document).ready(function () {
+  $('.submit').click(function (event) {
     event.preventDefault();
-      $(this).html(systemName());
-      $('.planet0').text(planetType());
-      $('.masses0').text(earthMasses());
-      $('.planet1').text(planetType());
-      $('.masses1').text(earthMasses());
-      $('.planet2').text(planetType());
-      $('.masses2').text(earthMasses());
-
+    $(this).html(systemName());
+    $('.planet0').text(planetType()).show();
+    $('.masses0').text(earthMasses()).hide();
+    $('.planet1').text(planetType()).show();
+    $('.masses1').text(earthMasses()).hide();
+    $('.planet2').text(planetType()).show();;
+    $('.masses2').text(earthMasses()).hide();
+  })
+  $('.planet0').click(function (event) {
+    event.preventDefault();
+    $('.masses0').toggle();
+  })
+  $('.planet1').click(function (event) {
+    event.preventDefault();
+    $('.masses1').toggle();
+  })
+  $('.planet2').click(function (event) {
+    event.preventDefault();
+    $('.masses2').toggle();
   })
 });
 
-$(document).ready(function(){
-  $('.planet').click(function(event){
-    event.preventDefault();
-      // $('#masses').text(earthMasses());
-  })
-});
+// $(document).ready(function(){
+//   $('.planet').click(function(event){
+//     event.preventDefault();
+//       // $('#masses').text(earthMasses());
+//   })
+// });
