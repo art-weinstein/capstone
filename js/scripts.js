@@ -6,6 +6,11 @@ function planetType() {
   return planet;
 }
 
+function planetAtm(){
+  let planetAt = planetAtmosphere[Math.floor(Math.random() * planetAtmosphere.length)];
+  return "Primary atmosphere composition: " + planetAt;
+}
+
 function earthMasses() {
   var num = 100;
   var mass = Math.floor(Math.random() * (10 * num - 1 * num) + 1 * num) / (1 * num);
@@ -35,22 +40,28 @@ $(document).ready(function () {
     $(this).html(systemName());
     $('.planet0').text(planetType()).show();
     $('.masses0').text(earthMasses()).hide();
+    $('.atmosphere0').text(planetAtm()).hide();
     $('.planet1').text(planetType()).show();
     $('.masses1').text(earthMasses()).hide();
+    $('.atmosphere1').text(planetAtm()).hide();
     $('.planet2').text(planetType()).show();;
+    $('.atmosphere2').text(planetAtm()).hide();
     $('.masses2').text(earthMasses()).hide();
   })
   $('.planet0').click(function (event) {
     event.preventDefault();
     $('.masses0').toggle();
+    $('.atmosphere0').toggle();
   })
   $('.planet1').click(function (event) {
     event.preventDefault();
     $('.masses1').toggle();
+    $('.atmosphere1').toggle();
   })
   $('.planet2').click(function (event) {
     event.preventDefault();
     $('.masses2').toggle();
+    $('.atmosphere2').toggle();
   })
 });
 
