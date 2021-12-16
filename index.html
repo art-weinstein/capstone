@@ -8,16 +8,29 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
+  <!-- <audio controls id='audio'>
+    <source src="music/spaceAmbient.wav" type="audio/wav">
+  </audio>
+  <script>
+    document.getElementById('audio').play();
+    var audio = document.getElementById('audio');
+    audio.volume = 0.1;
+  </script> -->
+  <div class = "container">
   <button class = 'submit'>Travel</button>
-  <button class = 'planet0'></button>
+  <button class = 'planet0'></button> <br>
   <p class = "masses0"></p>
   <p class = 'atmosphere0'></p>
-  <button class ='planet1'></button>
+  <button class ='planet1'></button> <br>
   <p class = "masses1"></p>
   <p class = 'atmosphere1'></p>
-  <button class ='planet2'></button>
+  <button class ='planet2'></button><br>
   <p class = "masses2"></p>
   <p class = 'atmosphere2'></p>
+  </div>
+   <video autoplay muted loop id = "myVideo">
+    <source src="img/slowPlanet.mp4" type="video/mp4">
+  </video>
 
   <!-- <button class = 'submit'>Travel Again</button> -->
 </body>

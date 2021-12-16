@@ -1,3 +1,6 @@
+
+
+
 var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
 var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia", "Helium", "Carbon Dioxide"];
 //planet temp?
