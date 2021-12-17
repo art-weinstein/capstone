@@ -45,7 +45,11 @@ body {
     float: left;
 }
 
-.submit0, .submit1, .submit2{
+.display {
+    display: none;
+}
+
+.begin, .submit0, .submit1, .submit2{
     color: white;
     font-size: large;
     outline: none;
@@ -60,7 +64,7 @@ body {
     margin-bottom: 7px;
     }
 
-.submit0:hover, .submit1:hover, .submit2:hover, .submit0.focus, .submit1.focus, .submit2.focus{
+.begin:hover, .begin.focus, .submit0:hover, .submit1:hover, .submit2:hover, .submit0.focus, .submit1.focus, .submit2.focus{
     background: rgb(155, 35, 35);
 }
 

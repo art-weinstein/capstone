@@ -57,6 +57,10 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
+  $('.begin').click(function (event){
+    event.preventDefault();
+    $('.begin').toggle();
+  })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     $('.submit0').html(systemName());
