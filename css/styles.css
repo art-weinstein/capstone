@@ -73,6 +73,10 @@ body {
     background: rgb(155, 35, 35);
 }
 
+.displayRogue{
+    display: none;
+}
+
 .planet0, .planet1, .planet2{
     display: none;
     color: white;
@@ -85,7 +89,6 @@ body {
     border-radius: 500px;
     background: transparent;
     cursor: pointer;
-    transition: all 0.3s linear;
     margin-bottom: 7px;
 }
 .masses0, .masses1, .masses2{
@@ -103,3 +106,5 @@ body {
     bottom: 0;
     z-index: -1;
   }
+
+  /* put rogue background logic here */

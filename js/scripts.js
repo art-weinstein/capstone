@@ -67,18 +67,28 @@ $(document).ready(function () {
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
-    $('.submit0').html(systemName());
-    $('.submit1').html(systemName());
-    $('.submit2').html(systemName());
-    $('.planet0').text(planetType()).show();
-    $('.masses0').text(earthMasses()).hide();
-    $('.atmosphere0').text(planetAtm()).hide();
-    $('.planet1').text(planetType()).show();
-    $('.masses1').text(earthMasses()).hide();
-    $('.atmosphere1').text(planetAtm()).hide();
-    $('.planet2').text(planetType()).show();;
-    $('.atmosphere2').text(planetAtm()).hide();
-    $('.masses2').text(earthMasses()).hide();
+    var num = Math.random();
+    if (num <0.5){
+      $('.displayRogue').show();
+      $('.planet0').hide()
+      $('.planet1').hide()
+      $('.planet2').hide()
+    }
+    else {
+      $('.displayRogue').hide();
+      $('.submit0').html(systemName());
+      $('.submit1').html(systemName());
+      $('.submit2').html(systemName());
+      $('.planet0').text(planetType()).show();
+      $('.masses0').text(earthMasses()).hide();
+      $('.atmosphere0').text(planetAtm()).hide();
+      $('.planet1').text(planetType()).show();
+      $('.masses1').text(earthMasses()).hide();
+      $('.atmosphere1').text(planetAtm()).hide();
+      $('.planet2').text(planetType()).show();;
+      $('.atmosphere2').text(planetAtm()).hide();
+      $('.masses2').text(earthMasses()).hide();
+    }
   })
   $('.planet0').click(function (event) {
     event.preventDefault();
