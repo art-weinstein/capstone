@@ -49,7 +49,9 @@ body {
     display: none;
 }
 
-
+.testPlanet {
+    display: none;
+}
 /* .begin {
     align-items: center;
 } */

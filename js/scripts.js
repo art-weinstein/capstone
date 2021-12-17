@@ -68,18 +68,18 @@ $(document).ready(function () {
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
-    if (num <0.5){
+    if (num <0.1){
       $('.displayRogue').show();
       $('.planet0').hide()
       $('.planet1').hide()
       $('.planet2').hide()
-    }
-    else {
+    } else {
       $('.displayRogue').hide();
       $('.submit0').html(systemName());
       $('.submit1').html(systemName());
       $('.submit2').html(systemName());
       $('.planet0').text(planetType()).show();
+      // $('.testPlanet').show();
       $('.masses0').text(earthMasses()).hide();
       $('.atmosphere0').text(planetAtm()).hide();
       $('.planet1').text(planetType()).show();
@@ -92,6 +92,12 @@ $(document).ready(function () {
   })
   $('.planet0').click(function (event) {
     event.preventDefault();
+    if($(this).text()=='Gas Giant') {
+      $('.testPlanet').toggle();
+     } else {
+       $('testPlanet').hide();
+     }
+    // $('.testPlanet').toggle();
     $('.masses0').toggle();
     $('.atmosphere0').toggle();
   })
