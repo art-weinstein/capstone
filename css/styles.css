@@ -49,6 +49,11 @@ body {
     display: none;
 }
 
+
+/* .begin {
+    align-items: center;
+} */
+
 .begin, .submit0, .submit1, .submit2{
     color: white;
     font-size: large;

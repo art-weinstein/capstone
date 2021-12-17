@@ -59,7 +59,11 @@ $(document).ready(function() {
 $(document).ready(function () {
   $('.begin').click(function (event){
     event.preventDefault();
-    $('.begin').toggle();
+    $('.submit0').html(systemName());
+    $('.submit1').html(systemName());
+    $('.submit2').html(systemName());
+    $('.display').fadeIn();
+    $('.begin').hide();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
