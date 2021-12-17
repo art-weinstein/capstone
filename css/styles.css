@@ -60,7 +60,7 @@ body {
     margin-bottom: 7px;
     }
 
-.submit:hover, .submit.focus{
+.submit0:hover, .submit1:hover, .submit2:hover, .submit0.focus, .submit1.focus, .submit2.focus{
     background: rgb(155, 35, 35);
 }
 
