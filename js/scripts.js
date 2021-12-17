@@ -57,9 +57,11 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-  $('.submit').click(function (event) {
+  $('.submit0, .submit1, submit2').click(function (event) {
     event.preventDefault();
-    $(this).html(systemName());
+    $('.submit0').html(systemName());
+    $('.submit1').html(systemName());
+    $('.submit2').html(systemName());
     $('.planet0').text(planetType()).show();
     $('.masses0').text(earthMasses()).hide();
     $('.atmosphere0').text(planetAtm()).hide();
@@ -89,9 +91,3 @@ $(document).ready(function () {
 
 
 
-// $(document).ready(function(){
-//   $('.planet').click(function(event){
-//     event.preventDefault();
-//       // $('#masses').text(earthMasses());
-//   })
-// });

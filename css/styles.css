@@ -3,7 +3,19 @@ body {
     height: 100%;
     color: white;
     background-color: black;
+    animation: fadeIn ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .play{
     border: 0;
@@ -33,18 +45,17 @@ body {
     float: left;
 }
 
-.submit{
+.submit0, .submit1, .submit2{
     color: white;
     font-size: large;
     outline: none;
-    display: block;
+    /* display: block; */
     border: solid rgb(155, 35, 35);
     font-weight: 450;
-    line-height: 1;
-    padding: 16px 30;
-    border-radius: 500px;
+    line-height: 1.5;
+    padding: 20px 20;
+    border-radius: 700px;
     background: transparent;
-    cursor: pointer;
     transition: all 0.3s linear;
     margin-bottom: 7px;
     }
@@ -55,6 +66,18 @@ body {
 
 .planet0, .planet1, .planet2{
     display: none;
+    color: white;
+    font-size: large;
+    outline: none;
+    border: solid rgb(155, 35, 35);
+    font-weight: 450;
+    line-height: 1;
+    padding: 16px 30;
+    border-radius: 500px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-bottom: 7px;
 }
 .masses0, .masses1, .masses2{
     display: none;
