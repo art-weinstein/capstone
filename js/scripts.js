@@ -1,5 +1,18 @@
 
+var audio = document.getElementById('audio');
+var play = document.getElementById('play');
+var count = 0;
 
+
+function playPause(){
+  if(count==0){
+    count = 1
+    audio.play();
+  } else{
+    count = 0;
+    audio.pause();
+  }
+}
 
 var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
 var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia", "Helium", "Carbon Dioxide"];
@@ -34,7 +47,13 @@ function finalPlanet() {
   return finalMass;
 }
 
-
+$(document).ready(function() {
+  var btn = $(".play");
+  btn.click(function() {
+    btn.toggleClass("paused");
+    return false;
+  });
+});
 
 
 $(document).ready(function () {
@@ -67,6 +86,8 @@ $(document).ready(function () {
     $('.atmosphere2').toggle();
   })
 });
+
+
 
 // $(document).ready(function(){
 //   $('.planet').click(function(event){
