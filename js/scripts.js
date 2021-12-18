@@ -93,7 +93,7 @@ $(document).ready(function () {
   $('.planet0').click(function (event) {
     event.preventDefault();
     if($(this).text()=='Gas Giant') {
-      $('.testPlanet').toggle();
+      $('.testPlanet').fadeToggle();
      } else {
        $('testPlanet').hide();
      }

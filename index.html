@@ -20,18 +20,25 @@
     var audio = document.getElementById('audio');
     audio.volume = 0.1;
   </script>
-    <button class='begin'>Begin</button> <br>
-  <div class="container">
-    <div class = 'displayRogue'>
-      Test rogue planet will be here
-    </div>
-    <div class='display'>
+  <button class='begin'>Begin</button> <br>
+
+  <div class='displayRogue'>
+    Test rogue planet will be here
+  </div>
+  <div class='display'>
+    <div class='center'>
       <p>Travel to system:</p>
       <button class='submit0'></button>
       <button class='submit1'></button>
       <button class='submit2'></button> <br>
       <button class='planet0'></button> <br>
-      <img src="img/testPlanet.jpg" class = "testPlanet">
+    </div>
+    <video autoplay muted loop class="testPlanet">
+      <source src="img/gasGiant.mp4" type="video/mp4">
+    </video>
+
+    <!-- <img src="img/gasGiant.mp4" class = "testPlanet"> -->
+    <div class='center'>
       <p class="masses0"></p>
       <p class='atmosphere0'></p>
       <button class='planet1'></button> <br>
@@ -42,6 +49,7 @@
       <p class='atmosphere2'></p>
     </div>
   </div>
+
   <video autoplay muted loop id="myVideo">
     <source src="img/slowPlanet.mp4" type="video/mp4">
   </video>
