@@ -1,3 +1,10 @@
+// const intro = document.querySelector('.intro');
+
+// document.addEventListener('DOMContentLoaded', (e)=>{
+//   setTimeout(()=>{
+//     intro.classList.add('display-none');
+//   }, 3000);
+// })
 
 var audio = document.getElementById('audio');
 var play = document.getElementById('play');

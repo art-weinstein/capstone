@@ -11,47 +11,51 @@
 
 <body>
   <audio id='audio'>
-    <source src="music/spaceAmbient.wav" type="audio/wav">
+    <source srSc="music/spaceAmbient.wav" type="audio/wav">
   </audio>
-  <button class='play' onclick="playPause()"></button>
-  <!-- <button id = 'stop'>&#x23F8</button> -->
-  <script>
-    document.getElementById('audio').play();
-    var audio = document.getElementById('audio');
-    audio.volume = 0.1;
-  </script>
-  <button class='begin'>Begin</button> <br>
-
-  <div class='displayRogue'>
-    Test rogue planet will be here
+  <div class='intro'>
+    Thulegate
   </div>
-  <div class='display'>
-    <div class='center'>
-      <p>Travel to system:</p>
-      <button class='submit0'></button>
-      <button class='submit1'></button>
-      <button class='submit2'></button> <br>
+  <div class='finalBackground'>
+    <button class='play' onclick="playPause()"></button>
+    <script>
+      document.getElementById('audio').play();
+      var audio = document.getElementById('audio');
+      audio.volume = 0.1;
+    </script>
+    <button class='begin'>Begin</button> <br>
+
+    <div class='displayRogue'>
+      Test rogue planet will be here
     </div>
-    <button class='planet0'></button> <br>
-    <video autoplay muted loop class="testPlanet">
-      <source src="img/gasGiant.mp4" type="video/mp4">
+    <div class='display'>
+      <div class='center'>
+        <p>Travel to system:</p>
+        <button class='submit0'></button>
+        <button class='submit1'></button>
+        <button class='submit2'></button> <br>
+      </div>
+      <button class='planet0'></button> <br>
+      <video autoplay muted loop class="testPlanet">
+        <source src="img/gasGiant.mp4" type="video/mp4">
+      </video>
+
+      <!-- <img src="img/gasGiant.mp4" class = "testPlanet"> -->
+      <p class="masses0"></p>
+      <p class='atmosphere0'></p>
+      <button class='planet1'></button> <br>
+      <p class="masses1"></p>
+      <p class='atmosphere1'></p>
+      <button class='planet2'></button><br>
+      <p class="masses2"></p>
+      <p class='atmosphere2'></p>
+
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="img/slowPlanet.mp4" type="video/mp4">
     </video>
-
-    <!-- <img src="img/gasGiant.mp4" class = "testPlanet"> -->
-    <p class="masses0"></p>
-    <p class='atmosphere0'></p>
-    <button class='planet1'></button> <br>
-    <p class="masses1"></p>
-    <p class='atmosphere1'></p>
-    <button class='planet2'></button><br>
-    <p class="masses2"></p>
-    <p class='atmosphere2'></p>
-
   </div>
-
-  <video autoplay muted loop id="myVideo">
-    <source src="img/slowPlanet.mp4" type="video/mp4">
-  </video>
 
   <!-- <button class = 'submit'>Travel Again</button> -->
 </body>
