@@ -76,11 +76,18 @@ $(document).ready(function () {
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
-    if (num < 0.1) {
+    if (num < 0.5) {
       $('.displayRogue').show();
-      $('.planet0').hide()
-      $('.planet1').hide()
-      $('.planet2').hide()
+      $('.masses0' + '.masses1' + '.masses2').hide();
+      $('.atmosphere0' + '.atmosphere1' + '.atmosphere2').hide();
+      $('#gasPlanet0' + '#gasPlanet1' + '#gasPlanet2').hide();
+      // $('.planet0').hide();
+      // $('.masses0').hide();
+      $('.atmosphere0').hide();
+      // $('#gasPlanet0').hide();
+      $('#icePlanet0' + '#icePlanet1', + '#icePlanet2').hide();
+      // $('.planet1').hide()
+      // $('.planet2').hide()
     } else {
       $('.displayRogue').hide();
       $('.submit0').html(systemName());
