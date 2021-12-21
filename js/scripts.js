@@ -87,7 +87,7 @@ $(document).ready(function () {
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
-    if (num < 0.5) {
+    if (num < 0.1) {
       $('.displayRogue').show();
       // $('.masses0' + '.masses1' + '.masses2').hide();
       // $('.atmosphere0', + '.atmosphere1', + '.atmosphere2').text(planetAtm()).hide();
@@ -130,6 +130,8 @@ $(document).ready(function () {
       $('#icePlanet0').fadeToggle();
     } else {
       $('#icePlanet0').hide();
+    } if ($('.life0' == 'Hosts life.')) {
+      $('.logCounter0').show();
     }
     // $('.gasPlanet').toggle();
     $('.masses0').fadeToggle();

@@ -59,6 +59,10 @@ body {
 }
 
 
+.logCounter0, .logCounter1, .logCounter2{
+    display: none;
+}
+
 .blurBackground{
     position: relative;
     backdrop-filter: blur(6px);
