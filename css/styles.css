@@ -58,6 +58,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+
 .blurBackground{
     position: relative;
     backdrop-filter: blur(6px);
