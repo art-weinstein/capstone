@@ -11,77 +11,113 @@
 
 <body>
   <audio id='audio'>
-    <source srSc="music/spaceAmbient.wav" type="audio/wav">
+    <source src="music/spaceAmbient.wav" type="audio/wav">
   </audio>
   <div class='intro'>
     Thulegate
   </div>
-  <div class='finalBackground'>
+  <div class='nextBackground'>
     <div class='blurBackground'>
-      <h3>January 1968: the final year of the United States operated mission "Chrome Dome." </h3>
-      <p>
-        The United States Air Force B-52 bomber HOBO 28 suffered an internal fire 90 miles south of Thule Air Base in
-        Greenland. The crew was forced to request an emergency landing in the Danish territory but would not make it. As
-        the fire worsened, electrical power was lost, and smoke rendered their instruments illegible. Of the seven crew
-        members, six were able to successfully eject. The seventh member Leonard Svitenko did not have a functional
-        ejection seat and suffered a fatal head injury while trying to escape through the hatch. <br>
-      </p>
-      <p>
-        The unmanned USAF B-52 bomber, carrying four megaton B28FI thermonuclear bombs continued past Thule Air Base and
-        crashed on the sea ice of North Star Bay, roughly 7.5 miles west. The explosive charges of all four nuclear
-        warheads detonated on impact and spread radioactive material over a large area. 225,000 pounds of burning jet
-        fuel
-        melted through the ice causing the wreckage and explosives to sink to the ocean floor. Recovery efforts were
-        said
-        to retrieve 93 percent of contaminated material, yet rumors persisted that the fourth bomb could not be
-        recovered
-        or was otherwise missing. <br>
-      </p>
-      <p>
-        Because of Denmark’s nuclear-free zone policy (1957), the presence of a loaded bomber in their Greenland
-        airspace
-        triggered public outcry. The suspicion of this policy’s violation would become known as Thulegate.
-      </p>
-    </div>
-    <button class='play' onclick="playPause()"></button>
-    <script>
-      document.getElementById('audio').play();
-      var audio = document.getElementById('audio');
-      audio.volume = 0.1;
-    </script>
-    <button class='begin'>Begin</button> <br>
-
-    <div class='displayRogue'>
-      Test rogue planet will be here
-    </div>
-    <div class='display'>
-      <div class='center'>
-        <p>Travel to system:</p>
-        <button class='submit0'></button>
-        <button class='submit1'></button>
-        <button class='submit2'></button> <br>
+      <button class='play' onclick="playPause()"></button> <br>
+      <div class=initial>
+        <h3>January 1968: the final year of the United States operated mission "Chrome Dome." </h3>
+        <p>
+          The United States Air Force B-52 bomber HOBO 28 suffered an internal fire 90 miles south of Thule Air Base in
+          Greenland. The crew was forced to request an emergency landing in the Danish territory but would not make it.
+          As
+          the fire worsened, electrical power was lost, and smoke rendered their instruments illegible. Of the seven
+          crew
+          members, six were able to successfully eject. The seventh member Leonard Svitenko did not have a functional
+          ejection seat and suffered a fatal head injury while trying to escape through the hatch. <br>
+        </p>
+        <p>
+          The unmanned USAF B-52 bomber, carrying four megaton B28FI thermonuclear bombs continued past Thule Air Base
+          and
+          crashed on the sea ice of North Star Bay, roughly 7.5 miles west. The explosive charges of all four nuclear
+          warheads detonated on impact and spread radioactive material over a large area. 225,000 pounds of burning jet
+          fuel
+          melted through the ice causing the wreckage and explosives to sink to the ocean floor. Recovery efforts were
+          said
+          to retrieve 93 percent of contaminated material, yet rumors persisted that the fourth bomb could not be
+          recovered
+          or was otherwise missing. <br>
+        </p>
+        <p>
+          Because of Denmark’s nuclear-free zone policy (1957), the presence of a loaded bomber in their Greenland
+          airspace
+          triggered public outcry. The suspicion of this policy’s violation would become known as Thulegate.
+        </p>
+        <button class="continue">Continue</button>
       </div>
-      <button class='planet0'></button> <br>
-      <video autoplay muted loop class="testPlanet">
-        <source src="img/gasGiant.mp4" type="video/mp4">
-      </video>
-
-      <!-- <img src="img/gasGiant.mp4" class = "testPlanet"> -->
-      <p class="masses0"></p>
-      <p class='atmosphere0'></p>
-      <button class='planet1'></button> <br>
-      <p class="masses1"></p>
-      <p class='atmosphere1'></p>
-      <button class='planet2'></button><br>
-      <p class="masses2"></p>
-      <p class='atmosphere2'></p>
-
     </div>
-
     <video autoplay muted loop id="myVideo">
       <source src="img/slowPlanet.mp4" type="video/mp4">
     </video>
+    <div class='next'>
+      <h3>January 3106</h3>
+      <p>
+        Despite various revivals of the START (Strategic Arms Reduction Talks) Treaty over the millennium, alleged
+        violations such as those of Thulegate fueled distrust among the world superpowers. Throughout these tensions,
+        an
+        advanced homebrewed virus has bypassed security of silos across the globe. Thousands of warheads not
+        previously
+        known to the public have set themselves to deploy and although the superpowers were initially reluctant to
+        declare World War III, the first bombs have fallen. <br>
+      </p>
+      <p>
+        You are a part of the global underground organization Locus. Teams of thousands spanning across the world all
+        working with one goal in mind: to explore and colonize habitable planets outside the solar system. Although
+        many
+        candidates are known, your role (along with many others) is to set out and discover potentially missed
+        Earth-like planets and maximize humanity’s opportunity to survive. The Locus mission “Domus” was not set to
+        start for another decade, but with Earth’s cataclysm close on the horizon, the risk must be taken. Only a
+        quarter of Domus’s mission will be able to set off. 2000 of the Locus team will be stationed in orbit around
+        Earth and await transmission of any potential Earth-likes you scan and encounter. <br>
+      </p>
+      <p>
+        Good Luck.
+      </p>
+    </div>
+    <button class='begin'>Begin</button> <br>
+      <div class='displayRogue'>
+        Test rogue planet will be here
+      </div>
+      <div class='display'>
+        <div class='center'>
+          <p>Travel to system:</p>
+          <button class='submit0'></button>
+          <button class='submit1'></button>
+          <button class='submit2'></button> <br>
+        </div>
+        <button class='planet0'></button> <br>
+        <video autoplay muted loop class="testPlanet">
+          <source src="img/gasGiant.mp4" type="video/mp4">
+        </video>
+    
+        <!-- <img src="img/gasGiant.mp4" class = "testPlanet"> -->
+        <p class="masses0"></p>
+        <p class='atmosphere0'></p>
+        <button class='planet1'></button> <br>
+        <p class="masses1"></p>
+        <p class='atmosphere1'></p>
+        <button class='planet2'></button><br>
+        <p class="masses2"></p>
+        <p class='atmosphere2'></p>
+    
+      </div>
   </div>
+  <video autoplay muted loop id="myVideo">
+    <source src="img/slowPlanet.mp4" type="video/mp4">
+  </video>
+  <script>
+    document.getElementById('audio').play();
+    var audio = document.getElementById('audio');
+    audio.volume = 0.1;
+  </script>
+
+
+
+
 
   <!-- <button class = 'submit'>Travel Again</button> -->
 </body>

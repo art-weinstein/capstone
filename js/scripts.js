@@ -1,10 +1,3 @@
-// const intro = document.querySelector('.intro');
-
-// document.addEventListener('DOMContentLoaded', (e)=>{
-//   setTimeout(()=>{
-//     intro.classList.add('display-none');
-//   }, 3000);
-// })
 
 var audio = document.getElementById('audio');
 var play = document.getElementById('play');
@@ -64,8 +57,16 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
+  $('.continue').click(function (event){
+    event.preventDefault();
+    $('.initial').hide();
+    $('.next').fadeIn();
+    $('.begin').fadeIn();
+
+  })
   $('.begin').click(function (event){
     event.preventDefault();
+    $('.next').hide();
     $('.submit0').html(systemName());
     $('.submit1').html(systemName());
     $('.submit2').html(systemName());
