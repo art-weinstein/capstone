@@ -41,8 +41,7 @@ body {
         opacity: 1;
     }
 }
-
-.intro {
+ .intro {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,7 +69,10 @@ body {
     animation-fill-mode: forwards; */
 }
 .next {
- display: none;
+    float: left;
+    width: 700px;
+    margin-left: 20px;
+    display: none;
 }
 .initial {
     float: left;
@@ -81,7 +83,7 @@ body {
     height: 100%;
     color: white;
     background-color: black;
-    z-index: 2;
+    z-index: 6;
     animation-delay: 13s;
     animation: fadeIn ease 13s;
     animation-iteration-count: 1;
@@ -124,7 +126,7 @@ body {
     display: none;
 }
 
-.testPlanet {
+#gasPlanet0, #gasPlanet1, #gasPlanet2, #icePlanet0, #icePlanet1, #icePlanet2 {
     display: none;
     width: 500px;
     height: 240px;
@@ -139,9 +141,7 @@ body {
 .begin {
     display:none;
 }
-/* .game{
-    display: none;
-} */
+
 .continue, .begin, .submit0, .submit1, .submit2{
     color: white;
     font-size: large;
