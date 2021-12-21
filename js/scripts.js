@@ -33,6 +33,17 @@ function earthMasses() {
   return "Earth Masses " + mass;
 }
 
+function life(){
+  let life = false;
+  var num = Math.random();
+  if(num <0.5) {
+    life = false;
+    return "Does not host life.";
+  } else {
+    return "Hosts life."
+  }
+}
+
 function systemName() {
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -96,13 +107,16 @@ $(document).ready(function () {
       $('.submit2').html(systemName());
       $('.planet0').text(planetType()).show();
       $('.masses0').text(earthMasses()).hide();
+      $('.life0').html(life()).hide();
       $('.atmosphere0').text(planetAtm()).hide();
       $('.planet1').text(planetType()).show();
       $('.masses1').text(earthMasses()).hide();
       $('.atmosphere1').text(planetAtm()).hide();
+      $('.life1').html(life()).hide();
       $('.planet2').text(planetType()).show();;
       $('.atmosphere2').text(planetAtm()).hide();
       $('.masses2').text(earthMasses()).hide();
+      $('.life2').html(life()).hide();
     }
   })
   $('.planet0').click(function (event) {
@@ -120,6 +134,7 @@ $(document).ready(function () {
     // $('.gasPlanet').toggle();
     $('.masses0').fadeToggle();
     $('.atmosphere0').fadeToggle();
+    $('.life0').fadeToggle();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault()
@@ -145,6 +160,7 @@ $(document).ready(function () {
 
     $('.masses1').toggle();
     $('.atmosphere1').toggle();
+    $('.life1').fadeToggle();
   })
   $('.planet2').click(function (event) {
     event.preventDefault();
@@ -160,6 +176,7 @@ $(document).ready(function () {
     }
     $('.masses2').toggle();
     $('.atmosphere2').toggle();
+    $('.life2').fadeToggle();
   })
 });
 
