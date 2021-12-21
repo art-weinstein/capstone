@@ -2,7 +2,7 @@
 var audio = document.getElementById('audio');
 var play = document.getElementById('play');
 var count = 0;
-
+var i = 0;
 
 function playPause() {
   if (count == 0) {
@@ -33,16 +33,28 @@ function earthMasses() {
   return "Earth Masses " + mass;
 }
 
-function life(){
+function life() {
   let life = false;
   var num = Math.random();
-  if(num <0.5) {
+  if (num < 0.5) {
     life = false;
     return "Does not host life.";
   } else {
     return "Hosts life."
   }
 }
+
+// function logPlanet() {
+//   let counter = 0;
+//   for (let i = 0; i <= counter; i++){
+//     if (counter == 0){
+//       counter = counter;
+//     } else {
+//       counter ++;
+//     }
+//     return "Planets logged: " + counter;
+//   }
+// }
 
 function systemName() {
   var text = "";
@@ -83,6 +95,13 @@ $(document).ready(function () {
     $('.submit2').html(systemName());
     $('.display').fadeIn();
     $('.begin').hide();
+  })
+  $('.logDisplay').click(function (event) {
+    event.preventDefault();
+    if (i == 0){
+      $('.viewLog').html('No planets logged.')
+    }
+    $('.viewLog').fadeToggle();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
@@ -159,7 +178,6 @@ $(document).ready(function () {
     } else {
       $('#icePlanet1').hide();
     }
-
     $('.masses1').toggle();
     $('.atmosphere1').toggle();
     $('.life1').fadeToggle();
@@ -179,6 +197,12 @@ $(document).ready(function () {
     $('.masses2').toggle();
     $('.atmosphere2').toggle();
     $('.life2').fadeToggle();
+  })
+  $('.logCounter0').click(function (event) {
+    event.preventDefault();
+    i++
+    $('.viewLog').html('Planets logged ' + i);
+    $('.logCounter0').hide();
   })
 });
 

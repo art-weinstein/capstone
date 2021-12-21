@@ -58,6 +58,15 @@ body {
     animation-fill-mode: forwards;
 }
 
+.logDisplay{
+    float: right;
+    margin-right: 15px;
+}
+
+.viewLog{
+    float: right;
+    display: none;
+}
 
 .logCounter0, .logCounter1, .logCounter2{
     display: none;
