@@ -87,7 +87,7 @@ $(document).ready(function () {
   })
   $('.logDisplay').click(function (event) {
     event.preventDefault();
-    if (i == 0){
+    if (i == 0) {
       $('.viewLog').html('No planets logged.')
     }
     $('.viewLog').fadeToggle();
@@ -116,7 +116,12 @@ $(document).ready(function () {
       $('.planet0').text(planetType()).show();
       $('.masses0').text(earthMasses()).hide();
       $('.life0').html(life()).hide();
-      $('.logCounter0').hide();
+      if ($('.life0').text() == 'Hosts life.') {
+
+        $('.logAppend').append('<button id ="logCounter0" class=btn>Log Planet</button>');
+      }
+      $('#logCounter0').hide();
+      // $('.logCounter0').hide();
       $('.atmosphere0').text(planetAtm()).hide();
       $('.planet1').text(planetType()).show();
       $('.masses1').text(earthMasses()).hide();
@@ -141,15 +146,8 @@ $(document).ready(function () {
       $('#icePlanet0').hide();
     }
     if ($('.life0').text() == 'Hosts life.') {
-      $('.logCounter0').append('<button data-role="button" data-inline="true" data-mini="true" data-theme="b">Log Planet</button>').trigger('create');    
+      $('#logCounter0').fadeToggle();
     }
-    // } else {
-    //   $('.logCounter0').hide();
-    // }
-    // } else if ($('.life0' != 'Hosts life.')) {
-    //   $('.logCounter0').hide();
-    // }
-    // $('.gasPlanet').toggle();
     $('.masses0').fadeToggle();
     $('.atmosphere0').fadeToggle();
     $('.life0').fadeToggle();
@@ -196,11 +194,11 @@ $(document).ready(function () {
     $('.atmosphere2').toggle();
     $('.life2').fadeToggle();
   })
-  $('.logCounter0').click(function (event) {
+  $('.logAppend').on('click', '#logCounter0', function (event) {
     event.preventDefault();
     i++
     $('.viewLog').html('Planets logged ' + i);
-    $('.logCounter0').remove();
+    $('#logCounter0').remove();
   })
 });
 
