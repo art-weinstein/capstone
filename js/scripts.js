@@ -85,7 +85,7 @@ $(document).ready(function () {
     $('.display').fadeIn();
     $('.begin').hide();
   })
-  $('.logDisplay').click(function (event) {
+  $('#logDisplay').click(function (event) {
     event.preventDefault();
     if (i == 0) {
       $('.viewLog').html('No planets logged.')
@@ -217,7 +217,7 @@ $(document).ready(function () {
   $('.logAppend').on('click', '#logCounter0', function (event) {
     event.preventDefault();
     i++
-    $('.viewLog').html('Planets logged ' + i);
+    $('.viewLog').html('Planets logged: ' + i);
     $('#logCounter0').remove();
   })
 });

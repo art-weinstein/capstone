@@ -141,15 +141,36 @@ body {
 }
 
 
+.center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .center {
     text-align: center;
+    margin: auto;
+    display: inline-block;
+    /* position: absolute; */
+}
+
+.log {
+    float: right;
+    width: 150px;
+    border: 10px white;
+    margin: 20px;
+    /* max-width: 25%; */
+    /* width: auto;
+    height: auto;
+    text-align: right;
+    position: relative; */
 }
 
 .begin {
     display:none;
 }
 
-.btn {
+.btn, #logDisplay {
     color: white;
     font-size: small;
     border: solid purple;
