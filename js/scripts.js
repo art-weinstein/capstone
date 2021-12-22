@@ -44,17 +44,6 @@ function life() {
   }
 }
 
-// function logPlanet() {
-//   let counter = 0;
-//   for (let i = 0; i <= counter; i++){
-//     if (counter == 0){
-//       counter = counter;
-//     } else {
-//       counter ++;
-//     }
-//     return "Planets logged: " + counter;
-//   }
-// }
 
 function systemName() {
   var text = "";
@@ -127,6 +116,7 @@ $(document).ready(function () {
       $('.planet0').text(planetType()).show();
       $('.masses0').text(earthMasses()).hide();
       $('.life0').html(life()).hide();
+      $('.logCounter0').hide();
       $('.atmosphere0').text(planetAtm()).hide();
       $('.planet1').text(planetType()).show();
       $('.masses1').text(earthMasses()).hide();
@@ -149,13 +139,21 @@ $(document).ready(function () {
       $('#icePlanet0').fadeToggle();
     } else {
       $('#icePlanet0').hide();
-    } if ($('.life0' == 'Hosts life.')) {
-      $('.logCounter0').show();
     }
+    if ($('.life0').text() == 'Hosts life.') {
+      $('.logCounter0').append('<button data-role="button" data-inline="true" data-mini="true" data-theme="b">Log Planet</button>').trigger('create');    
+    }
+    // } else {
+    //   $('.logCounter0').hide();
+    // }
+    // } else if ($('.life0' != 'Hosts life.')) {
+    //   $('.logCounter0').hide();
+    // }
     // $('.gasPlanet').toggle();
     $('.masses0').fadeToggle();
     $('.atmosphere0').fadeToggle();
     $('.life0').fadeToggle();
+    // $('.logCounter0').fadeToggle();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault()
@@ -202,7 +200,7 @@ $(document).ready(function () {
     event.preventDefault();
     i++
     $('.viewLog').html('Planets logged ' + i);
-    $('.logCounter0').hide();
+    $('.logCounter0').remove();
   })
 });
 
