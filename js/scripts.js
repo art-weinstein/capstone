@@ -100,6 +100,7 @@ $(document).ready(function () {
       // $('.masses0' + '.masses1' + '.masses2').hide();
       // $('.atmosphere0', + '.atmosphere1', + '.atmosphere2').text(planetAtm()).hide();
       $('#gasPlanet0' + '#gasPlanet1' + '#gasPlanet2').hide();
+      $('#rockPlanet0' + '#rockPlanet1' + '#rockPlanet2').hide();
       // $('.planet0').hide();
       $('.masses0').hide();
       $('.masses1').hide();
@@ -145,6 +146,11 @@ $(document).ready(function () {
     } else {
       $('#icePlanet0').hide();
     }
+    if ($(this).text() == 'Rocky') {
+      $('#rockPlanet0').fadeToggle();
+    } else {
+      $('#rockPlanet0').hide();
+    }
     if ($('.life0').text() == 'Hosts life.') {
       $('#logCounter0').fadeToggle();
     }
@@ -161,6 +167,10 @@ $(document).ready(function () {
     $('#icePlanet0').hide();
     $('#icePlanet1').hide();
     $('#icePlanet2').hide();
+    $('#rockPlanet0').hide();
+    $('#rockPlanet1').hide();
+    $('#rockPlanet2').hide();
+
   })
   $('.planet1').click(function (event) {
     event.preventDefault();
@@ -173,6 +183,11 @@ $(document).ready(function () {
       $('#icePlanet1').fadeToggle();
     } else {
       $('#icePlanet1').hide();
+    }
+    if ($(this).text() == 'Rocky') {
+      $('#rockPlanet1').fadeToggle();
+    } else {
+      $('#rockPlanet1').hide();
     }
     $('.masses1').toggle();
     $('.atmosphere1').toggle();
@@ -189,6 +204,11 @@ $(document).ready(function () {
       $('#icePlanet2').fadeToggle();
     } else {
       $('#icePlanet2').hide();
+    }
+    if ($(this).text() == 'Rocky') {
+      $('#rockPlanet2').fadeToggle();
+    } else {
+      $('#rockPlanet2').hide();
     }
     $('.masses2').toggle();
     $('.atmosphere2').toggle();
