@@ -15,7 +15,7 @@ function playPause() {
 }
 
 var planetTraits = ["Rocky", "Icy", "Gas Giant", "Earth-Like"];
-var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia", "Helium", "Carbon Dioxide"];
+var planetAtmosphere = ["Nitrogen Rich", "Oxygen Rich", "Amonia Rich", "Helium", "Carbon Dioxide"];
 //planet temp?
 function planetType() {
   let planet = planetTraits[Math.floor(Math.random() * planetTraits.length)];
