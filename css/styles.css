@@ -184,7 +184,7 @@ body {
     margin-bottom: 5px;
 }
 
-.planet0, .planet1, .planet2, .continue, .begin, .submit0, .submit1, .submit2{
+.continue, .begin, .submit0, .submit1, .submit2{
     color: white;
     font-size: large;
     outline: none;
@@ -196,8 +196,7 @@ body {
     border-radius: 700px;
     background: transparent;
     transition: all 0.3s linear;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 9px;
     z-index: 4;
     }
 
@@ -214,6 +213,23 @@ body {
     display: none;
 }
 
+.planet0, .planet1, .planet2{
+    color: white;
+    display: none;
+    font-size: large;
+    outline: none;
+    /* display: block; */
+    border: solid rgb(155, 35, 35);
+    font-weight: 450;
+    line-height: 1.5;
+    padding: 20px 20;
+    border-radius: 700px;
+    background: transparent;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    z-index: 4;
+}
 .masses0, .masses1, .masses2{
     display: none;
 }
