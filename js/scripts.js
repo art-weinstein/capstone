@@ -91,14 +91,18 @@ $(document).ready(function () {
     if (i == 0 && anomalies == 0) {
       $('.viewLog').html('No planets logged.')
       $('.viewAnomaly').html('No anomalies logged.')
-    } 
+    } else if(i!=0 && anomalies == 0){
+      $('.viewAnomaly').html('No anomalies logged.')
+    } else if (i==0 && anomalies !=0){
+      $('.viewLog').html('No planets logged.')
+    }
     $('.viewLog').fadeToggle();
     $('.viewAnomaly').fadeToggle();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
-    if (num < 0.8) {
+    if (num < 0.1) {
       $('.displayRogue').fadeIn();
       // $('.masses0' + '.masses1' + '.masses2').hide();
       // $('.atmosphere0', + '.atmosphere1', + '.atmosphere2').text(planetAtm()).hide();
@@ -119,6 +123,9 @@ $(document).ready(function () {
       $('#icePlanet0', + '#icePlanet1', + '#icePlanet2').hide();
       $('#roguePlanet').fadeIn();
       $('#myVideo').fadeOut();
+      $('#logAnomaly').fadeIn();
+      // $('.displayRogue').append('<button id ="logAnomaly" class=btn>Log this anomaly</button>');
+
     } else {
       $('.displayRogue').fadeOut();
       $('#roguePlanet').fadeOut();
@@ -257,6 +264,18 @@ $(document).ready(function () {
     $('.viewLog').html('Planets logged: ' + i);
     $('#logCounter2').remove();
   })
+  $('#logAnomaly').click(function(event){
+    event.preventDefault();
+    anomalies++
+    $('.viewAnomaly').html('Anomalies logged: ' + anomalies);
+    $('#logAnomaly').fadeOut();
+  })
+  // $('.displayRogue').on('click', '#logAnomaly', function (event){
+  //   event.preventDefault();
+  //   anomalies++
+  //   $('.viewAnomaly').html('Anomalies logged: ' + anomalies);
+  //   $('#logAnomaly').remove();
+  // })
 });
 
 
