@@ -3,6 +3,7 @@ var audio = document.getElementById('audio');
 var play = document.getElementById('play');
 var count = 0;
 var i = 0;
+var anomalies = 0;
 
 function playPause() {
   if (count == 0) {
@@ -87,16 +88,18 @@ $(document).ready(function () {
   })
   $('#logDisplay').click(function (event) {
     event.preventDefault();
-    if (i == 0) {
+    if (i == 0 && anomalies == 0) {
       $('.viewLog').html('No planets logged.')
-    }
+      $('.viewAnomaly').html('No anomalies logged.')
+    } 
     $('.viewLog').fadeToggle();
+    $('.viewAnomaly').fadeToggle();
   })
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
     if (num < 0.8) {
-      $('.displayRogue').show();
+      $('.displayRogue').fadeIn();
       // $('.masses0' + '.masses1' + '.masses2').hide();
       // $('.atmosphere0', + '.atmosphere1', + '.atmosphere2').text(planetAtm()).hide();
       $('#gasPlanet0' + '#gasPlanet1' + '#gasPlanet2').hide();
@@ -117,6 +120,7 @@ $(document).ready(function () {
       $('#roguePlanet').fadeIn();
       $('#myVideo').fadeOut();
     } else {
+      $('.displayRogue').fadeOut();
       $('#roguePlanet').fadeOut();
       $('#myVideo').fadeIn();
       $('.submit0').html(systemName());
