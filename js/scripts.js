@@ -121,6 +121,7 @@ $(document).ready(function () {
       $('.life1').html(life()).hide();
       $('.life2').html(life()).hide();
       $('#icePlanet0', + '#icePlanet1', + '#icePlanet2').hide();
+      $('#earthLike0', + '#earthLike1', + '#earthLike2').hide();
       $('#roguePlanet').fadeIn();
       $('#myVideo').fadeOut();
       $('#logAnomaly').fadeIn();
@@ -177,6 +178,11 @@ $(document).ready(function () {
     } else {
       $('#rockPlanet0').hide();
     }
+    if ($(this).text() == 'Earth-Like') {
+      $('#earthLike0').fadeToggle();
+    } else {
+      $('#earthLiket0').hide();
+    }
     if ($('.life0').text() == 'Hosts life.') {
       $('#logCounter0').fadeToggle();
     }
@@ -196,6 +202,9 @@ $(document).ready(function () {
     $('#rockPlanet0').hide();
     $('#rockPlanet1').hide();
     $('#rockPlanet2').hide();
+    $('#earthLike0').hide();
+    $('#earthLike1').hide();
+    $('#earthLike2').hide();
 
   })
   $('.planet1').click(function (event) {
@@ -214,6 +223,11 @@ $(document).ready(function () {
       $('#rockPlanet1').fadeToggle();
     } else {
       $('#rockPlanet1').hide();
+    }
+    if ($(this).text() == 'Earth-Like') {
+      $('#earthLike1').fadeToggle();
+    } else {
+      $('#earthLike1').hide();
     }
     if ($('.life1').text() == 'Hosts life.') {
       $('#logCounter1').fadeToggle();
@@ -238,6 +252,11 @@ $(document).ready(function () {
       $('#rockPlanet2').fadeToggle();
     } else {
       $('#rockPlanet2').hide();
+    }
+    if ($(this).text() == 'Earth-Like') {
+      $('#earthLike2').fadeToggle();
+    } else {
+      $('#earthLike2').hide();
     }
     if ($('.life2').text() == 'Hosts life.') {
       $('#logCounter2').fadeToggle();
