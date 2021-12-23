@@ -68,7 +68,7 @@ body {
     display: none;
 }
 
-.logCounter0, .logCounter1, .logCounter2{
+#logCounter0, #logCounter1, #logCounter2{
     display: none;
 }
 
@@ -197,8 +197,12 @@ body {
     margin-bottom: 7px;
     }
 
-.continue:hover, .begin:hover, .co .begin.focus, .submit0:hover, .submit1:hover, .submit2:hover, .submit0.focus, .submit1.focus, .submit2.focus{
-    background: rgb(155, 35, 35);
+#logDisplay:hover, #logDisplay.focus, #logCounter0:hover, #logCounter0.focus  {
+    color: purple;
+}
+
+.continue:hover, .begin:hover, .continue.focus, .begin.focus, .submit0:hover, .submit1:hover, .submit2:hover, .submit0.focus, .submit1.focus, .submit2.focus{
+    color: rgb(155, 35, 35);
 }
 
 .displayRogue{
@@ -233,6 +237,14 @@ body {
     top: 0;
     bottom: 0;
     z-index: -1;
+  }
+
+  #roguePlanet{
+      width: 100%;
+      height: auto;
+      display:none;
+      background-size: cover;
+      object-fit: cover;
   }
 
   #rockPlanet0, #rockPlanet1, #rockPlanet2, #gasPlanet0, #gasPlanet1, #gasPlanet2, #icePlanet0, #icePlanet1, #icePlanet2 {
