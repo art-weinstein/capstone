@@ -102,7 +102,7 @@ $(document).ready(function () {
   $('.submit0, .submit1, .submit2').click(function (event) {
     event.preventDefault();
     var num = Math.random();
-    if (num < 0.1) {
+    if (num < 0.3) {
       $('.displayRogue').fadeIn();
       // $('.masses0' + '.masses1' + '.masses2').hide();
       // $('.atmosphere0', + '.atmosphere1', + '.atmosphere2').text(planetAtm()).hide();
